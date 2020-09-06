@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="icon"
       type="image/png"
@@ -31,27 +31,29 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <nav class="nav wrapper">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="" class="logo__img" />
-        </div>
-        <button class="btn btn--nav">Try It Free</button>
-      </nav>
-    </header>
-    <!-- Main -->
-    <main class="main">
-      <!-- Hero Section -->
-      <section class="section section--hero">
-        <div class="wrapper">
-          <h1 class="section__title section__title--hero">
-            Build The Community <br> Your Fans Will Love
-          </h1>
-          <p class="section__subtitle section__subtitle--hero">
-            Huddle re-imagines the way we build communities. You have a voice,
-            but so does your audience. Create connections with your users as you
-            engage in genuine discussion.
-          </p>
-          <button class="btn btn--hero">Get Started For Free</button>
+      <div class="wrapper">
+
+        <nav class="nav">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="" class="logo__img" />
+          </div>
+
+          <button class="btn btn--nav">Try It Free</button>
+        </nav>
+
+        <div class="hero">
+          <div class="txt-container">
+            <h1 class="hero__title hero__title--hero">
+              Build The Community <br />
+              Your Fans Will Love
+            </h1>
+            <p class="hero__subtitle hero__subtitle--hero">
+              Huddle re-imagines the way we build communities. You have a voice, but
+              so does your audience. Create connections with your users as you
+              engage in genuine discussion.
+            </p>
+            <button class="btn btn--hero">Get Started For Free</button>
+          </div>
           <div class="img-container">
             <img
               src="./images/illustration-mockups.svg"
@@ -60,8 +62,10 @@
             />
           </div>
         </div>
-      </section>
-
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="main">
       <!-- Features Section -->
       <section class="section section--features">
         <div class="wrapper">
@@ -121,7 +125,6 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="wrapper">
-
         <div class="cta">
           <h3 class="cta__title">Ready To Build Your Community?</h3>
           <button class="btn btn--cta">Get Started For Free</button>
@@ -150,37 +153,49 @@
               <img src="./images/icon-email.svg" alt="" class="icon" />
               <p><a href="mailto:example@huddle.com">example@huddle.com</a></p>
             </div>
-
           </address>
 
           <nav class="nav nav--footer">
             <ul class="nav__list">
-              <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">What We Do</a></li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">What We Do</a>
+              </li>
               <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Career</a></li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Career</a>
+              </li>
               <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Contact Us</a></li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contact Us</a>
+              </li>
             </ul>
           </nav>
 
           <div class="social-container">
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social__link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </li>
             </ul>
 
             <p class="copyright">
               &copy; Copyright 2018 Huddle. All rights reserved.
             </p>
-
           </div>
         </div>
       </div>
@@ -191,7 +206,8 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/simonhernandez">Simon Hernandez</a>.
+        >. Coded by
+        <a href="https://github.com/simonhernandez">Simon Hernandez</a>.
       </p>
     </footer>
 
