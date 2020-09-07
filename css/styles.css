@@ -28,7 +28,7 @@
     --bxs-card: 0px 4px 20px -13px rgba(0,0,0,0.67);
     /* Others */
 }
-@media screen and (min-width: 600px){
+@media screen and (min-width: 900px){
     :root{
         --fs-h1: 2rem;
         --fs-h2: 1.6rem;
@@ -38,7 +38,7 @@
         --fs-small: .675rem;
     }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
     :root{
         --fs-h1: 2.5rem;
         --fs-h2: 2.3rem;
@@ -113,6 +113,10 @@ h6{
 .btn{
     box-shadow: var(--bxs-btn);
     font-weight: var(--fw-med);
+}
+.btn:hover{
+    opacity: .85;
+
 }
 .btn-primary{
     background-color: var(--clr-pink);
@@ -245,6 +249,10 @@ h6{
     justify-content: center;
     align-items: center;
 }
+.nav__item:hover .nav__link,
+.social__item:hover .social__link{
+    color: var(--clr-pink);
+}
 .copyright{
     text-align: center;
     font-size: var(--fs-small);
@@ -264,15 +272,16 @@ h6{
     }
     .hero{
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 45% 55%;
     }
     .hero .img-container{
-        width: 80%;
+        width: 90%;
         margin-left: auto;
     }
     .hero .txt-container{
         align-self: center;
     }
+
     /* Section */
     .feature{
         max-width: initial;
@@ -299,6 +308,7 @@ h6{
         order: -1;
         margin-right: auto;
     }
+
     /* Footer */
     .footer{
         padding-bottom: 3rem;
