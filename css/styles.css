@@ -198,6 +198,7 @@ h6{
 .footer{
     background-image: linear-gradient(to top, var(--clr-darkcyan) 85%, var(--clr-white) 15%);
     color: var(--clr-white);
+    padding-bottom: .5rem;
 }
 .cta{
     background-color: var(--clr-white);
@@ -227,12 +228,42 @@ h6{
     display: flex;
     margin-bottom: 2rem;
 }
-
+.footer__address .icon{
+    align-self: flex-start;
+    margin-top: .2rem;
+    margin-right: 1rem;
+}
+.nav--footer .nav__item{
+    margin-bottom: 1rem;
+}
+.social__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.social__item{
+    margin-right: 2rem;
+    border: 1px solid var(--clr-white);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    text-align: center;
+}
 /* ---- Media Queries ---- */
 @media screen and (min-width: 768px){
+    /* Layout */
     .wrapper{
-        padding: initial;
+        /* padding: initial; */
     }
+    /* Header */
     .header{
         background-image: url(/images/bg-hero-desktop.svg);
         text-align: left;
@@ -248,6 +279,7 @@ h6{
     .hero .txt-container{
         align-self: center;
     }
+    /* Section */
     .feature{
         max-width: initial;
         flex-direction: row;
@@ -262,7 +294,7 @@ h6{
         flex-direction: column;
     }
     .feature .img-container{
-        max-width: 33%;
+        max-width: 40%;
         order: 2;
         margin: initial;
     }
